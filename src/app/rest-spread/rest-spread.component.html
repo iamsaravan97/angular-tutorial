@@ -1,0 +1,14 @@
+<h1>Players List</h1>
+<div *ngIf="showList">
+  <ng-container *ngFor="let player of playerslist;">
+    <h3>{{player.PlayerName}}</h3>
+    <p>{{player.PlayerNumber}}</p>
+    <p>{{player.Country}}</p>
+  </ng-container>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Status</div>
+    <div class="panel-body">
+      <h3>{{title}}</h3>
+    </div>
+  </div>
+</div>
